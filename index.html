@@ -4,15 +4,40 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>We Sing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!--  Links to Bootstrap, Jquery, Firebase, CSS and Javascript   --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/app.js"></script>
 </head>
 <body>
-   <!--  Add area for search term
-    Add area for questions
-    Add Submit/Search button    --> 
+   <!--  Add area for search term  --> 
+<div class="container">	
+	<br>
+	<br>
+	<div class="row text-center">
+		<div class="col-sm-12">
+               <!--  Form to submit search  --> 
 
-    
+			<form role="form">
+                   <!--  Accept user input for search  --> 
+				<input class="form-control input-lg text-center" id="music-input" type="text" placeholder="Search for Music">
+
+                   <!--  Button to send the search term to the app.js  --> 
+				<input class="btn btn-warning btn-block" id="music-search" value="Search"></input>
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 text-center">
+               <!--  Show the results of the search. --> 
+			<div id="results-area"></div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
